@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,54 +21,58 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="0dp"
-        android:alignmentMode="alignBounds"
-        android:animateLayoutChanges="false"
         android:columnCount="4"
         android:orientation="vertical"
         android:padding="0dp"
-        android:rowCount="5"
-        android:useDefaultMargins="false">
+        android:alignmentMode="alignBounds"
+        android:rowCount="5">
 
         <Button
             android:id="@+id/buttonC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_column="0"
-            android:layout_margin="0dp"
             android:layout_row="0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:onClick="buttonClear"
             android:text="@string/c"
             android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonParentheses"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_column="1"
-            android:layout_margin="0dp"
             android:layout_row="0"
-            android:onClick="buttonClicked"
             android:text="@string/parentheses"
             android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonPercent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="2"
-            android:layout_margin="0dp"
             android:layout_row="0"
-            android:onClick="buttonClicked"
+            android:onClick="clickSing"
+            android:layout_gravity="fill"
             android:text="@string/percent"
             android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonDiv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_column="3"
-            android:layout_margin="0dp"
             android:layout_row="0"
             android:onClick="clickSing"
             android:text="@string/Division"
@@ -76,7 +81,11 @@
         <Button
             android:id="@+id/button7"
             android:layout_column="0"
-            android:layout_margin="0dp"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_row="1"
             android:onClick="buttonClicked"
             android:text="@string/_7"
@@ -84,10 +93,12 @@
 
         <Button
             android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
             android:layout_column="1"
-            android:layout_margin="0dp"
             android:layout_row="1"
             android:onClick="buttonClicked"
             android:text="@string/_8"
@@ -95,10 +106,12 @@
 
         <Button
             android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="2"
-            android:layout_margin="0dp"
             android:layout_row="1"
             android:onClick="buttonClicked"
             android:text="@string/_9"
@@ -106,10 +119,12 @@
 
         <Button
             android:id="@+id/buttonX"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="3"
-            android:layout_margin="0dp"
             android:layout_row="1"
             android:onClick="clickSing"
             android:text="@string/x"
@@ -117,10 +132,11 @@
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_margin="0dp"
             android:layout_row="2"
             android:onClick="buttonClicked"
             android:text="@string/_4"
@@ -128,10 +144,12 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="1"
-            android:layout_margin="0dp"
             android:layout_row="2"
             android:onClick="buttonClicked"
             android:text="@string/_5"
@@ -139,8 +157,12 @@
 
         <Button
             android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="2"
-            android:layout_margin="0dp"
             android:layout_row="2"
             android:onClick="buttonClicked"
             android:text="@string/_6"
@@ -149,8 +171,12 @@
         <Button
             android:id="@+id/buttonMinus"
             android:layout_column="3"
-            android:layout_margin="0dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_row="2"
+            android:layout_gravity="fill"
             android:onClick="clickSing"
             android:text="@string/Minus"
             android:textSize="30sp" />
@@ -158,6 +184,11 @@
         <Button
             android:id="@+id/button1"
             android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_margin="0dp"
             android:layout_row="3"
             android:onClick="buttonClicked"
@@ -168,7 +199,12 @@
         <Button
             android:id="@+id/button2"
             android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
             android:layout_margin="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_row="3"
             android:onClick="buttonClicked"
             android:text="@string/_2"
@@ -188,10 +224,12 @@
 
         <Button
             android:id="@+id/buttonPlus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_column="3"
-            android:layout_margin="0dp"
             android:layout_row="3"
             android:onClick="clickSing"
             android:text="@string/Plus"
@@ -199,10 +237,12 @@
 
         <Button
             android:id="@+id/buttonDot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_margin="0dp"
             android:layout_row="4"
             android:onClick="buttonClicked"
             android:text="@string/Dot"
@@ -210,10 +250,12 @@
 
         <Button
             android:id="@+id/button0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="1"
-            android:layout_margin="0dp"
             android:layout_row="4"
             android:onClick="buttonClicked"
             android:text="@string/_0"
@@ -221,23 +263,26 @@
 
         <Button
             android:id="@+id/buttonPlusMinus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
             android:layout_column="2"
-            android:layout_margin="0dp"
             android:layout_row="4"
-            android:onClick="buttonClicked"
             android:text="@string/PlusMinus"
             android:textSize="30sp" />
 
 
         <Button
             android:id="@+id/buttonEqual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:layout_column="3"
-            android:layout_margin="0dp"
             android:layout_row="4"
+            android:layout_gravity="fill"
             android:onClick="equals"
             android:text="@string/Equal"
             android:textSize="30sp" />

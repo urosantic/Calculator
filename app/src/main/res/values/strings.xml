@@ -22,4 +22,5 @@
     <string name="Equal">=</string>
     <string name="xSq">x^2</string>
     <string name="m">M</string>
+    <string name="xFac">X!</string>
 </resources>
